@@ -1,0 +1,19 @@
+/* utility classes */
+.b1{
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    border: 0;
+    border-radius: 50px;
+    background-color: rgb(53, 37, 16);
+    color: white;
+    cursor: pointer;
+}
+.b1:hover{font-weight: bold;}
+
+.font2{
+    font-family: "Playwrite US Trad", cursive;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: italic;
+}

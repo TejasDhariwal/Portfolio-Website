@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejas Dhariwal | Portfolio
+    </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <div class="logo">
+                    <h1>Tejas Dhariwal</h1>
+                </div>
+                <div class="menu-items">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main body -->
+    <div class="main">
+        <!-- Intro Section -->
+        <div class="intro">
+            <div class="intro-image">
+                <img src="images/img9.avif" alt="" class="intro-img">
+            </div>
+            <div class="intro-content">
+                <h1 class="intro-heading">Hi !</h1>
+                <h2 class="intro-text" id="intro-text1">I'm Tejas dhariwal</h2>
+                <h2 class="intro-text" id="intro-text2">A Python Developer</h2>
+                <h2 class="intro-text" id="intro-text3">A Full-Stack Web Developer.</h2>
+            </div>
+        </div>
+        <hr>
+
+        <!-- About Section -->
+        <div class="about" id="about">
+            <h1 class="about-heading">About Me</h1>
+            <div class="about-info">
+                <div class="about-image">
+                    <img src="images/img14.avif" alt="img" class="about-img">
+                </div>
+                <div class="about-content">
+                    <h3 class="about-me">My name is Tejas Dhariwal. Few years back, I didn't knew anything about coding.
+                        But, in 2019 my father introduced me to the concept of coding and from then I never stopped and
+                        finding a lot of interest in it, today I am a Full Stack Web-Developer and a Python Developer.
+                        Now I
+                        am looking for various opportunities to work on the ideas of other people and make their dream
+                        work
+                        live on the internet.
+
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Skills Section -->
+        <div class="skills" id="skills">
+            <h1 class="skills-heading">My Top Skills</h1>
+            <div class="content">
+                <div class="skill-img">
+                    <img src="images/img1.webp" alt="img1" id="img1" class="img" width="200px">
+                    <img src="images/img3.png" alt="img3" id="img2" class="img" width="300px">
+                    <img src="images/img2.png" alt="img2" id="img3" class="img" width="200px">
+                </div>
+                <div class="skill-content">
+                    <div class="skill-content1">
+                        <h4>
+                            I am a Full Stack Web-Developer and I can build a fully functional website for young
+                            entrepreneurs to bring their business online. In web-development, I have an experience of two
+                            years working in HTML, CSS and Python(Django).
+                        </h4>
+
+                    </div>
+                    <div class="skill-content2">
+                        <h4>
+                            I am a Python Programmer also with an experience of two plus years and I can solve your
+                            problems
+                            with my Python coding skills and increase the efficiency of your work.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Projects Section -->
+        <div class="projects" id="projects">
+            <h1 class="projects-heading">My Recent Projects</h1>
+            <div class="projects-content">
+               
+                <div class="project">
+                    <h2 class="project-title">Planet Fitness Gym</h2>
+                    <img src="images/img5.jpg" alt="" class="project-img">
+                    <p class="project-desc">This is a gym website to promote their business online.</p>
+                    <span class="project-status">Completed</span>
+                    <form action="projects/p1/gym.html" method="post" class="project-form">
+                        <button class="project-view">View project</button>
+                    </form>
+                </div>
+
+                <div class="project">
+                    <h2 class="project-title">Yoga Therapist</h2>
+                    <img src="images/img15.jfif" alt="" class="project-img">
+                    <p class="project-desc">A website for a young yoga therapist.</p>
+                    <span class="project-status">Completed</span>
+                    <form action="projects/p2/index.html" method="post" class="project-form">
+                        <button class="project-view">View project</button>
+                    </form>
+                </div>
+
+                <div class="project">
+                    <h2 class="project-title">Proponics Website</h2>
+                    <img src="images/img8.avif" alt="" class="project-img">
+                    <p class="project-desc">I created a website for an Aeroponics based company.</p>
+                    <span class="project-status">Completed</span>
+                    <form action="https://proponics.mystrikingly.com/" method="post" class="project-form">
+                        <button class="project-view">View project</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        
+        <!-- Contact Section -->
+        <div class="contact" id="contact">
+            <h1 class="contact-heading">Get In Touch !</h1>
+            <div class="contact-content">
+                <div class="contact-quote">
+                    <h2 class="quote">If you have any questions or queries, I will always be happy to help. Feel free to
+                        contact me and I will surely get back to you as soon as possible.</h2>
+                </div>
+                <form class="contact-form" onsubmit="sendToWhatsapp();">
+                    <div class="userdetails">
+                        <input type="text" placeholder="Name" class="name" id="name" name="name">
+                        <input type="text" placeholder="Mobile" class="email" id="mob" name="email">
+                    </div>
+                    <div class="user-message">
+                        <textarea cols="77" rows="10" placeholder="Message" class="mess" name="message" id="mess"></textarea>
+                    </div>
+
+                    <button class="btn" type="submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h3 class="footer-content">Made by Tejas Dhariwal</h3>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

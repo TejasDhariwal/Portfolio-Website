@@ -1,0 +1,520 @@
+
+@keyframes slideRight {
+    from{
+        position: absolute;
+        right: -40vw;
+    }
+    to{
+        right: 11vw;
+    }
+}
+
+@keyframes slideLeft {
+    from{
+        position: absolute;
+        left: -40vw;
+    }
+    to{
+        left: 11vw;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+    /* add font here */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+body{
+    background-color: rgb(238, 204, 160);
+}
+
+/* hamburger */
+.menu{
+    z-index: 2;
+    position: absolute;
+    top: 3vh;
+    left: 10vw;
+    cursor: pointer;
+    display: none;
+}
+.menu img{
+    width: 30px;
+}
+
+/* message */
+.Message{
+    background-color: grey;
+    color: white;
+    opacity: .5;
+    width: 30vw;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 1vw;
+    margin-top: 12vh;
+    animation: slideLeft 2s ease;
+}
+
+/* navbar */
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    list-style-type: none;
+    padding: 10px 100px;
+}
+
+nav ul li:nth-child(2){
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li a{
+    height: 90%;
+    padding: 3px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+nav ul li:nth-child(2){
+    border-bottom: 0;
+    font-weight: 100;
+}
+
+nav ul .parent > *:hover{
+    border-bottom: 1px solid black;
+}
+
+/* introduction section */
+
+.intro{
+    
+    height: 90vh;
+    width: 95vw;
+    padding: 2vw;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.intro .container{
+    width: 40%;
+}
+
+.intro .container h1{
+    margin-bottom: 5vh;
+}
+.intro .container h3{
+    margin-bottom: 5vh;
+}
+
+/* about us */
+.aboutMe{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15vh;
+}
+
+.aboutMe .aboutInfo{
+    width: 40vw;
+}
+
+.aboutMe .aboutInfo h1{
+    font-weight: bolder;
+    margin-bottom: 2vh;
+}
+.aboutMe .aboutImg{
+    height: 80vh;
+}
+
+/* services section */
+.services{
+    width: 99vw;
+    height: 112vh;
+    text-align: center;
+    background-color: whitesmoke;
+}
+.services .heading{
+    padding-top: 10vh;
+    font-size: large;
+}
+.services .sub-head{
+    color: grey;
+    margin: 2vh 0;
+}
+.services hr{
+    width: 20px;
+    margin: 0 auto;
+}
+
+.services .cats .cat1{
+    background-color: rgb(53, 37, 16);
+    color: white;
+}
+
+.services .cats{
+    display: flex;
+    width: 80vw;
+    margin: 3vh 10vw;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+.services .cats .cat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 60px;
+    width: 20vw;
+    height: 7vh;
+}
+.services .cats .cat:hover{cursor: pointer;}
+
+.services .cat-data{
+    margin: 5vh 20vw;
+}
+.services .cat-data div{
+    width: 50vw;
+    height: 20vh;
+    margin: 2vh 2vw;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    border-bottom: 1px solid rgb(219, 218, 218);
+}
+.services .cat-data div img{
+    border-radius: 200px;
+    width: 120px;
+    height: 120px;
+}
+
+
+/* contact section */
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    height: 100vh;
+    background: whitesmoke;
+    position: relative;
+}
+
+.contact .left img{
+    width: 52vw;
+    height: 70vh;
+}
+
+.contact .left p{
+    position: absolute;
+    bottom: 47vh;
+    left: 10vw;
+    color: white;
+    background: grey;
+    opacity: 0.5;
+    width: 41vw;
+    height: 10vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .right h3{
+    margin-bottom: 10vh;
+}
+.contact .right .timeInfo{
+    margin: 2vh 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 25vw;
+}
+
+.contact .right .timeInfo .time > *{
+    margin: 0;
+    padding: 0;
+}
+
+.contact .right div img{
+    width: 25px;
+    height: 25px;
+    border-right: 1px solid black;
+    padding-right: 20px;
+}
+
+.contact .right button{
+    width: 12vw;
+    height: 7vh;
+    background-color: gray;
+}
+
+.contact2{
+    width: 99vw;
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: 99vw 100vh;
+    text-align: center;
+    padding: 10px;
+}
+.contact2 > *{
+    color: white;
+}
+
+.contact2 p{
+    margin: 5vh auto;
+    background-color: grey;
+    color: white;
+    opacity: .5;
+    width: 30vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact2 h3{
+    margin-top: 12vh;
+}
+.contact2 hr{
+    width: 5vw;
+    margin: 1vh auto;
+}
+.contact2 form{
+    margin: 5vh 28vw;
+    display: grid;
+    grid-template-columns: 20vw 20vw;
+    gap: 2vw;
+}
+
+.contact2 form input{
+    height: 5vh;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-weight: bolder;
+    border-bottom: 1px solid white;
+    padding: 5px;
+}
+.contact2 form input::placeholder{color: white;}
+.contact2 form button{
+    background-color: gray;
+    width: 12vw;
+    height: 7vh;
+}
+
+/* top icon */
+
+.drop-icon {
+
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 60px;
+    background-color: rgb(76, 45, 4);
+    color: white;
+    cursor: pointer;
+    border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+/* footer */
+footer{
+    width: 97.5vw;
+    height: 50vh;
+    background-color: rgb(96, 105, 86);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer .heading{
+    margin: 2vh 0;
+}
+
+footer .parent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30vw;
+    margin: 5vh auto;
+}
+footer .parent  *{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+footer .parent  *:hover{
+    color: rgb(64, 37, 2);
+    font-weight: bolder;
+}
+
+footer > p{
+    margin: 5vh 0;
+}
+
+/* responsiveness */
+@keyframes moveNavbar {
+    from{
+        left: -100vw;
+    }
+    to{
+        left: 0vw;
+    }
+}
+
+
+@media (max-width: 1200px) {
+
+    /* hamburger menu */
+    .menu{
+        position: fixed;
+        display: block;
+    }
+
+    .active{
+        z-index: 0;
+        display: block;
+        animation: moveNavbar 1s ease-in;
+        position: fixed;
+        z-index: 1;
+    }
+
+    /* navbar */
+    nav{
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        opacity: .7;
+        overflow: hidden;
+        padding: 0 auto;
+        display: none;
+    }
+    nav *{
+        color: white;
+    }
+    nav ul{
+        width: 71%;
+        margin: 0 auto;
+    }
+    nav ul, nav ul .parent{
+        flex-direction: column;
+    }
+    nav ul > *, nav ul .parent > *{
+        margin: 2vh 0;
+    }
+    nav ul li a{
+        color: white;
+    }
+
+    /* introduction */
+    .intro{
+        display: block;
+        width: 85vw;
+        padding: 25px;
+    }
+    .intro .container{
+        width: 80%;
+        margin-top: 80px;
+    }
+    .intro img{
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    /* about section */
+    .aboutMe{
+        display: block;
+        padding: 25px;
+    }
+    .aboutMe .aboutImg{
+        width: 65vw;
+        height: auto;
+        margin: 0 auto;
+    }
+    .aboutMe .aboutInfo{
+        width: 69vw;
+        font-size: small;
+        text-align: justify;
+    }
+
+    /* services */
+    .services .cats{
+        flex-direction: column;
+    }
+    .services .cats .cat{
+        width: 250px;
+    }
+    .services .cat-data div{
+        width: 250px;
+    }
+
+    /* contact */
+    .contact{
+        flex-direction: column;
+    }
+    .contact .left img{
+        width: 90vw;
+        height: auto;
+    }
+    .contact .left p{
+        bottom: 76vh;
+        left: 27vw;
+    }
+    .contact .right{
+        text-align: center;
+    }
+    .contact .right .timeInfo{
+        margin-left:20vw;
+        width: 57vw;
+    }
+    .contact .right button{
+        width: 200px;
+    }
+
+    .contact2 form{
+        display: block;
+    }
+    form > *{
+        margin-top: 5px;
+    }
+    .contact2 form button{
+        width: 180px;
+        margin-top: 20px;
+    }
+    .contact2 p{
+        width: 270px;
+    }
+
+    /* footer */
+    footer .parent{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+}
